@@ -12,7 +12,7 @@ body{
 }
 
 .grid-container {
-    display: grid; /* Sets the displa to GRID, wooooooooooo */
+    display: Grid; /* Sets the displa to GRID, wooooooooooo */
     gap: 20px; /* Gapping the spaces. */
     /* Setting collumns and rows. */
     grid-template-columns: 1fr 1fr 1fr;
@@ -20,11 +20,9 @@ body{
     max-width: 800px;
 }
 
-.grid-container > .grid-item > .merged {
+.grid-container > .grid-item:nth-child(5) {
     grid-column: span 2;
 }
-
-
 
 .grid-container > .grid-item > *{
     width: 100%;
@@ -33,7 +31,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-items: stretch;
 }
+
 
 .grid-container > .grid-item > figure > figcaption{
     margin-top: 10px;
@@ -43,6 +43,10 @@ body{
 
 .secondary-bg {
     background-color: #333;
+}
+
+h1 > .secondary-bg {
+    height: 300px;
 }
 
 .svg-light-fill{
