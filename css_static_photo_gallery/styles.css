@@ -43,11 +43,12 @@ body{
 
 .secondary-bg {
     background-color: #333;
-}
-
-h1 > .secondary-bg {
     height: 300px;
 }
+
+/* h1 > .secondary-bg {
+    height: 300px;
+} */
 
 .svg-light-fill{
     color: #fff;
