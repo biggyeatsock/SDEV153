@@ -81,7 +81,7 @@ footer {
 
 @media screen and (min-width: 320px) {
   main{
-    padding: auto;
+    padding: 0;
   }
 
   nav{
