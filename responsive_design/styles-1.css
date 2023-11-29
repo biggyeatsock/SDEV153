@@ -1,0 +1,92 @@
+/* CSS Reset */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+body:not(nav) {
+  /* √ TODO: Clamp the font size to a minimum of 0.75rem, a default of 2vw, and a max size of 1rem */ 
+  /* We're using not(nav) to prevent the font size from being applied to the nav element. */
+  font-size: clamp(.75rem, 2vw, 1rem)
+
+}
+
+header {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* For any images on the page ... */
+/* √ TODO: Set the max width to 100% of the parent element, but no larger than 450px using the min() function. */
+/* √ TODO: Set the height appropriately to maintain the aspect ratio */
+img {
+
+  max-width: 100% ;
+  min-width: 450px;
+  height: auto;
+
+}
+
+
+nav {
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section,
+figure {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* √ TODO: Add media query for screens less than 320px wide */
+/* √ TODO: In the media query, remove the padding from the main element. */
+/* √ TODO: In the media query, modify the nav ul elements so that they stack into a column. */
+
+
+@media screen and (min-width: 320px) {
+  main{
+    padding: auto;
+  }
+
+  nav{
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+}
