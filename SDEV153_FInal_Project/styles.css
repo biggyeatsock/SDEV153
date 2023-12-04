@@ -1,2 +1,67 @@
-/* Style sheet */
+* {
+    font-family: Verdana sans-serif;
+}
 
+.navbar {
+    background-color: #333;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Style the dropdown menu */
+.navbar ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.navbar ul ul li {
+    display: block;
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li a:hover {
+    background-color: #555;
+}
+
+.header{
+    text-align: center ;
+}
+
+.main{
+    text-align: center;
+    font-size: large;
+}
+
+a{color:#696969}
+a:visited{color:#696969}
+a:hover{color:#696969}
+a:active{color:#696969}
+
+.tech_items{
+    display: inline;
+    
+}
