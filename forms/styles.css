@@ -1,0 +1,25 @@
+form.user-info{
+    display: table;
+}
+
+div.address div.form-name div.form-email div.form-dob div.address{
+    display: table-row;
+}
+
+label, input select{
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label{
+    padding-right: 20px;
+}
+
+div.terms{
+    display: table
+}
+
+input, label{
+    display: table-cell;
+    margin: 10px;
+}
