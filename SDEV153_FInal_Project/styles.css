@@ -36,7 +36,7 @@
     border-radius: 7px;
     background-color: #bdbdbd;
     z-index: 1;
-    min-width: 100px;
+    min-width: 144px;
 }
 
 /* Style the dropdown menu */
@@ -79,4 +79,10 @@ a:active{color:#696969}
 .tech_items{
     display: inline;
     
+}
+
+
+.cursed {
+    height: min-content;
+    width: min-content
 }
